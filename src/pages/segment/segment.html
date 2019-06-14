@@ -1,0 +1,47 @@
+
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>Segments</ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="segments">
+      <ion-segment-button value="segment1">
+        Segment1
+      </ion-segment-button>
+      <ion-segment-button value="segment2">
+        Segment2
+      </ion-segment-button>
+      <ion-segment-button value="segment3">
+        Segment3
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding>
+  <div [ngSwitch]="segments">
+    <ion-list *ngSwitchCase="'segment1'">
+      <ion-item>
+        <p style="margin-top: 20px; font-size: 20px; color: black;">
+          Hi welcome to segment page 1.
+        </p>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'segment2'">
+      <ion-item>
+          <p style="margin-top: 20px; font-size: 20px; color: black;">
+            This page is so called segment page 2.
+          </p>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'segment3'">
+      <ion-item>
+          <p style="margin-top: 20px; font-size: 20px; color: black;">
+            If you are looking for the segment page 3,  then you are in the right place :)
+          </p>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

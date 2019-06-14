@@ -1,0 +1,19 @@
+.action-sheets-basic-page {
+    .ion-md-share {
+      color: green;
+    }
+    .ion-md-arrow-dropright-circle {
+      color: #508AE4;
+    }
+    .ion-md-heart-outline {
+      color: #ED4248;
+    }
+    .action-sheet-cancel ion-icon,
+    .action-sheet-destructive ion-icon {
+      color: #ED4248;
+    }
+    .action-sheet-group { overflow: auto; }
+  }
+  ion-card {
+    text-align: center;
+  }
